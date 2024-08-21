@@ -29,6 +29,22 @@ Thonny es un software de programación principalmente utilizado para conectar di
 
 ## Instalar o Actualizar el firmware de Micropython
 
-** en desarrollo
+1. En el menú “Run”, seleccionar “Configure Interpreter...”
+![config](/assets/img/config.png)
+
+2. En la pestaña “Interpreter”, seleccionar "Install or update MicroPython (espool)"
+3. Elegir el puerto correspondiente, familia MicroPython (ESP32, ESP32-S2, ESP32-S3 o ESP32-C3) y variante "Espressif"
+   
+ESP32 ![ESP32](assets/img/esp32.jpg) 
+
+ESP32-S2 ![ESP32-S2](assets/img/generic_s2..jpg) 
+
+ESP32-C3 ![ESP32-C3](assets/img/esp32c3.jpg)
+
+5. Click en "Instalar"
+   
+![firm](/assets/img/firm.png)
+
+6. Por ultimo presionar el botón reset de la tarjeta y el botón reset en thonny. 
 
 
