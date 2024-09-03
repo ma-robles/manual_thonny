@@ -54,7 +54,7 @@ Thonny es un software de programación principalmente utilizado para conectar di
 
 2. En la pestaña “Interpreter”, seleccionar "Install or update MicroPython (espool)"
 3. Elegir el puerto correspondiente
-4. Elegir el firmware que corresponda a la tarjeta de la familia MicroPython (ESP32, ESP32-S2, ESP32-S3 o ESP32-C3) y selecionar la variante "Espressif"
+4. Elegir el firmware que corresponda a la tarjeta de la familia MicroPython (normalmente trabajaremos con los modelos ESP32, ESP32-S2, ESP32-S3 o ESP32-C3, pero puede ser otro):
 
 **ESP32** https://micropython.org/download/ESP32_GENERIC/
 
@@ -77,7 +77,9 @@ Thonny es un software de programación principalmente utilizado para conectar di
    
 ![firm](/assets/img/firm.png)
 
-7. Presionar el botón de reinicio en la tarjeta y posteriormente presionar el botón de reinicio en thonny, al reiniciar ambos la tarjeta se conectará de manera automática.  
+7. Si no es posible hacer la carga automática (hay algún error), manten presionado el botón de *boot* en la tarjeta mientras presionas una vez el botón de reinicio en la ESP y a continuación click en *Instalar*. Una vez que comience la carga del firmware puedes soltar el botón *boot*.
+
+Nota: Todas las ESP32 cuentan con 2 botones, uno es el *reset* (para reiniciar) y el otro es el *boot* para entrar a la rutina de carga de firmware. Normalmente vienen etiquetados en la PCB, pero si te es complicado encontrar la etiqueta, puedes presionarlos y probar cuál hace el reinicio y el otro será el *boot*. 
 
 ## Configuración para conectar a la ESP32
 1. Abrir Thonny
