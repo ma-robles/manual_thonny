@@ -7,7 +7,7 @@ layout: default
 ---
 
 ## Introducción
-Thonny es un software de programación principalmente utilizado para conectar dispositivos con micropython.
+Thonny es una herramienta para programación en Python (IDE), principalmente se utiliza para conectar y programar dispositivos con Micropython.
 
 ## Instalación
 1. Acceder a <https://thonny.org>
@@ -19,6 +19,7 @@ Thonny es un software de programación principalmente utilizado para conectar di
 
 
 ## Descarga de driver para Windows 
+Algunas versiones de dispositivos, requieren la instalación de drivers para lograr la comuinicación. A continuación se ecplica el proceso correspondiente a la ESP32-WROOM-32 (38 pines).
 
 1. Acceder a <https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads>
 
