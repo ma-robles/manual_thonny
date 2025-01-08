@@ -90,10 +90,26 @@ Nota: Todas las ESP32 cuentan con 2 botones, uno es el *reset* (para reiniciar) 
 
 3. En la pestaña *Interpreter*, seleccionar *Micropython (ESP32)* y el puerto correspondiente (en Windows aparece como *Silicon Labs CP210x USB to UART Bridge* o *Dispositivo serie USB (COM##)*.
 
-4. Desactivar todas las opciones de la última sección, excepto *restart interpreter before running a script*
+4. Desactivar todas las opciones de la última sección, excepto *restart interpreter before running a script* (como se muestra en la siguiente imagen)
 
-5. Click en OK
 ![interpreter](/assets/img/interpreter.png)
 
-#### Estás listo para utilizar Tony
+5. Click en OK para aplicar la configuración y regresar a la ventana principal. En la zona inferior se muestra la ventana de Shell con un mensaje similar a "Micropython v.1.22.22 ...". Este mensaje nos indica la versión de Micropython instalada en la ESP32, así como la versión de la placa que estamos usando. Finalmente veremos el prompt del intérprete ( >>> ) indicando que la ESP32 se encuentra lista para recibir instrucciones. 
+
 ![tony](/assets/img/tony.png)
+
+Si no se muestra el mensaje indicado, probablemente ha ocurrido algún error, comunmente es suficiente presionar el botón STOP (en la barra de botones) o reiniciar la ESP32.
+Esto último lo podemos hacer presionando CTRL+D o con el botón de reset en la placa (típicamente indicado con RST).
+
+![reset](/assets/img/esp32_reset.jpg)
+
+6. Finalmente, para facilitar el manejo de los programas, es conveniente activar la pestaña "files". 
+Para esto, vamos al menú "view" y activamos la opción "files" en la lista que se nos mostrará.
+Esto nos desplegará un panel del lado izquierdo con la lista de los archivos que se encuentran tanto en nuestra computadora como en la ESP32 (llamado Micropython device). 
+Esto se ilustra en la siguiente imagen.
+
+![files](/assets/img/files.png)
+
+Esta pestaña es bastante útil para cargar archivos a la ESP32, bastará seleccionar el o los archivos que se quieran copiar, dar click derecho y seleccionar la opción "Upload to \".
+De manera similar podemos respaldar archivos que se encuentran en la ESP32 a nuestra computadora, dando click derecho y seleccionando la opción "Download to ...".
+
